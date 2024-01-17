@@ -1,0 +1,52 @@
+GET http://localhost:8000/mascotas/buscar HTTP/1.1
+
+
+###
+POST http://localhost:8000/mascotas/crear HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "avejo",
+    "edad": 4,
+    "detalles": "mmmm",
+    "detalles1": "vvvvv",
+    "celular": "123",
+    "nombreA": "vvvvv",
+    "imagen": "imagen.jpg"
+   
+}
+###
+POST http://localhost:8000/mascotas/crear1 HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "celular": "123",
+    "nombreA": "vvvvv"
+}
+
+###
+GET http://localhost:8000/mascotas/buscarId/6 HTTP/1.1
+###
+GET http://localhost:8000/mascotas/buscarNombre/avejo HTTP/1.1
+
+###
+PUT http://localhost:8000/mascotas/actualizar/6 HTTP/1.1
+Content-Type: application/json
+
+{
+ 
+   "nombre": "avejo",
+    "edad": 4,
+    "detalles": "mmmm",
+    "detalles1": "vvvvv",
+    "celular": "123",
+    "nombreA": "vvvvv"
+   
+}
+
+###
+DELETE http://localhost:8000/mascotas/eliminar/3 HTTP/1.1
+
+###
+DELETE http://localhost:8000/mascotas/eliminarTodo HTTP/1.1
